@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 100%;
+  @media screen and (max-width: 600px) {
+    font-size: 95%;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 70%;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 55%;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 47%;
+  }
+  @media screen and (max-width: 265px) {
+    font-size: 40%;
+  }
+  @media screen and (max-width: 225px) {
+    font-size: 30%;
+  }
+}
+.body-home {
+  background-color: $color-body;
+  background-image: url("../image/center-line-grade.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 0.9rem 0;
+}
+.body-signup {
+  padding: 0.2rem 0;
+  background-image: url("../image/center-line-grade.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+}
+.body-login {
+  background-color: $color-body;
+  background-image: url("../image/center-line-grade.jpg");
+  background-repeat: no-repeat;
+  background-size: center;
+  background-position: center;
+}

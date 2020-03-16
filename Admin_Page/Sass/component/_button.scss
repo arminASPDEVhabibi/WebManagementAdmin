@@ -1,0 +1,29 @@
+.button {
+  .button-color {
+    background-color: rgba($color-submit, 0.75) !important;
+    color: white;
+  }
+  &__reset {
+    cursor: pointer;
+    transition: 0.3s !important;
+    width: 40% !important;
+    float: left;
+    margin:1rem .8rem;
+  }
+  &__submit {
+    cursor: pointer;
+    transition: 0.3s !important;
+    width: 40% !important;
+    margin:1rem .5rem;
+  }
+  .hover:hover {
+    background-color: rgba($color-submit, 0.5) !important;
+    transform: translateY(-0.4rem);
+    box-shadow: 0 0.1rem 0.5rem rgba(31, 162, 214, 0.5) !important;
+    transition: 0.5s !important;
+  }
+  .hover:active {
+    transform: translateY(-0.2rem);
+    transition: 0.4s !important;
+  }
+}

@@ -1,0 +1,51 @@
+//THIS ARE HEADER////////////////////
+
+@mixin link-prop {
+  text-decoration: none;
+  color: $color-header-link-light;
+  display: inline-block;
+  transition: 0.7s;
+}
+@mixin search-box {
+  height: 2rem;
+  border: solid 0.1rem $color-border-search-text;
+  border-radius: 0.1rem;
+  transition: 1s;
+  outline: none;
+}
+@mixin search-after-hover {
+  background-color: rgba($color-body, 1);
+  color: $color-header-link-hover;
+  border: solid $color-body 0.11rem;
+  transform: translateY(-0.3rem);
+}
+@mixin media {
+  @media screen and (max-width: 465px) {
+    font-size: 80%;
+  }
+  @media screen and (max-width: 305px) {
+    font-size: 40%;
+  }
+}
+//THIS ARE SECTION SIGNUP PAGE////////
+
+@mixin mediaSIGNUP {
+  @media screen and (max-width: 600px) {
+    font-size: 95% ;
+  }
+  @media screen and (max-width: 550px) {
+    font-size: 70% ;
+  }
+  @media screen and (max-width: 400px) {
+    font-size: 55% ;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 47% ;
+  }
+  @media screen and (max-width: 265px) {
+    font-size: 40% ;
+  }
+  @media screen and (max-width: 225px) {
+    font-size: 30% ;
+  }
+}

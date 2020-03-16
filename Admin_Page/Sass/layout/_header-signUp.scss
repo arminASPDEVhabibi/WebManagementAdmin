@@ -1,0 +1,21 @@
+.header-box {
+  &__list {
+    background-color: transparent;
+    text-align: right;
+    box-shadow: 0.1rem 0.5rem 2.5rem $color-box-shadow;
+    height: 4rem;
+    &--item {
+      list-style-type: none;
+      padding: 0.5rem;
+      .item {
+        display: inline-block;
+      }
+      .link:link,
+      .link:visited {
+        @include link-prop;
+        padding: 0.5rem 1.5rem;
+        text-align: center;
+      }
+    }
+  }
+}

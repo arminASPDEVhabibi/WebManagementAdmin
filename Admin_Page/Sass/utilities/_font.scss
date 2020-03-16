@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "Parastoo";
+  src: url("/Font/Parastoo.eot") format("eot"), url("/Font/Parastoo.ttf") format("ttf"),
+    url("/Font/Parastoo.woff") format("woff");
+}
+@font-face {
+  font-family: "ParastooBold";
+  src: url("/Font/Parastoo-Bold.eot") format("eot"), url("/Font/Parastoo-Bold.ttf") format("ttf"),
+    url("/Font/Parastoo-Bold.woff") format("woff");
+}
+html {
+  font-family: "Parastoo";
+}

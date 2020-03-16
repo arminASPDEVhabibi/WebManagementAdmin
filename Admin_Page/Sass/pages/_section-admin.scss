@@ -1,0 +1,24 @@
+.content {
+  padding: 3.5rem 0.5rem;
+  text-align: center;
+  overflow: auto;
+  &__table {
+    background-color: $color-background-table;
+    width: 100%;
+    direction: rtl;
+    box-shadow: 0 5rem 10rem 0 rgba(0, 0, 0, 1);
+
+    &--header {
+      background-color: $color-background-header-table;
+      color: $color-header-table;
+    }
+    &--body {
+      transition: 0.5s;
+      .link-table:link,
+      .link-table:visited {
+        text-decoration: none;
+        color:$color-link;
+      }
+    }
+  }
+}

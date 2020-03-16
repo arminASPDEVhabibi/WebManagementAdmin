@@ -1,0 +1,11 @@
+//THIS ARE SHOULD LINK FOR VIEW-DISPLAY IN ADMIN HEADER////////////
+.hover-table:hover {
+  cursor: pointer;
+  background-color: lighten($color-background-table, 10%) !important;
+}
+.hover-link:hover,
+.hover-link:active{
+  transform: translateY(0.2rem) scaleX(1);
+  color: $color-header-link-hover !important;
+  border-bottom: 1px solid white;
+}

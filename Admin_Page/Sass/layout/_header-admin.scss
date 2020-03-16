@@ -1,0 +1,109 @@
+.header {
+  // width: 100%;
+  //THIS DISPLAY IS NONE/////
+  &__information {
+    display: none;
+    text-align: center;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: 0 1rem 3rem 0 rgba($color-information, 0.5);
+    height: 7rem;
+    padding: 1rem;
+    background: linear-gradient(to right bottom, rgba($color-body-light, 0.8) 1%, rgba($color-body-dark, 0.8) 100%);
+    color: $color-text-header;
+    &--image {
+      position: relative;
+      text-align: center;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 0.5rem;
+      float: right;
+      height: 100%;
+      width: 7rem;
+      .photo {
+        position: absolute;
+        left: 0;
+        width: 7rem;
+        height: 100%;
+        border-radius: 0.5rem;
+      }
+    }
+    &--text {
+      text-align: center;
+      padding: 0 3rem;
+      border-radius: 1rem;
+      &:last-child {
+        padding-left: 0;
+      }
+      .details {
+        list-style-type: none;
+      }
+    }
+  }
+  &__top-menu {
+    background-color: $color-background-navigation;
+    height: auto;
+    overflow: hidden;
+    box-shadow: 0 2rem 4rem 0 rgba(0, 0, 0, 0.8);
+    padding: 0.65rem 1rem;
+    &:last-child {
+      padding-right: 0;
+      padding-left: 0.5rem;
+    }
+    &--navigation {
+      float: right;
+      @media screen and (max-width: 190px) {
+        display: block;
+        padding: 1.5rem 0.1rem;
+      }
+    }
+    .list-item {
+      list-style-type: none;
+      &--text {
+        display: inline-block;
+      }
+      &--link:link,
+      &--link:visited {
+        //THERE ARE INCLUDE:COLOR-LINK AND TEXT-DECORATION PROPERTY AND DISPLAY:IN-BLOCK AND TRANSITION.///////
+        @include link-prop;
+        padding: 0 1rem;
+      }
+    }
+    &--search {
+      width: auto;
+      display: inline-block;
+      @media screen and (max-width: 190px) {
+        width: 100%;
+        display: block;
+        float: left;
+        padding: 1.5rem 0.1rem;
+        border-top: solid 0.1rem rgb(71, 71, 71);
+        border-bottom: solid 0.1rem rgb(71, 71, 71);
+        background-color: rgb(87, 87, 87);
+      }
+      .search-item {
+        &__button {
+          width: 2rem;
+          @include search-box;
+          background-color: $color-background-search-button;
+          @include media;
+        }
+        &__text {
+          @include search-box;
+          text-align: right;
+          font-family: Parastoo;
+          @include media;
+          @media screen and (max-width: 190px) {
+            width: 50%;
+          }
+        }
+        &__button:hover {
+          cursor: pointer;
+          @include search-after-hover;
+        }
+        &__text:focus {
+          @include search-after-hover;
+        }
+      }
+    }
+  }
+}

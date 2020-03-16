@@ -1,0 +1,3 @@
+.child-color-table:nth-child(odd) {
+    background-color: lighten($color-background-table, 20%);
+  }
